@@ -1,0 +1,16 @@
+Web2Rpm/bin/*
+Web2Rpm/obj/*
+.vs/Web2Rpm/v14/.suo
+Web2Rpm/Web2Rpm.xproj.user
+Web2Rpm/Properties/PublishProfiles/*
+
+\.vs/Web2Rpm/v15/\.suo
+
+\.vs/Web2Rpm/v15/sqlite3/storage\.ide
+
+*.tmp
+
+\.vs/Web2Rpm/v15/sqlite3/*
+\.vs/Web2Rpm/v15/Server/sqlite3/*
+
+Web2Rpm/obj/
