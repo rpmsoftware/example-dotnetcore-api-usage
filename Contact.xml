@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<rpm:Process xmlns:rpm="urn:rpmsoftware.com:Process">
+  <name>Contact</name>
+  <date>Mar 1,2018</date>
+  <titleNumber>true</titleNumber>
+  <number>
+    <minumum>4</minumum>
+    <formNumberReadOnly>True</formNumberReadOnly>
+  </number>
+  <repeating>
+    <enabled>false</enabled>
+    <addlink>Add repeating fields</addlink>
+  </repeating>
+  <agentautoaddagentparticipants>false</agentautoaddagentparticipants>
+  <isSimple>false</isSimple>
+  <ShowStartLink>true</ShowStartLink>
+  <ShowStartLinkOnForm>true</ShowStartLinkOnForm>
+  <OnStartShowAllFields>true</OnStartShowAllFields>
+  <permissions>
+    <addParticipantChangeOwner>Edit</addParticipantChangeOwner>
+    <editTrashNotes>Edit</editTrashNotes>
+    <addDeleteRepeatingFields>Start</addDeleteRepeatingFields>
+    <permissionsForSubUsers>{"AgentUserEmailAccess":false,"CustomerUserEmailAccess":false,"AgentUserPermission":1,"AgentUserChangeStatus":false,"AgentUserAddAction":false,"CustomerUserPermission":1,"CustomerUserChangeStatus":false,"CustomerUserAddAction":false}</permissionsForSubUsers>
+  </permissions>
+  <NotificationFormInfo>[]</NotificationFormInfo>
+  <Signature>{"IsEnabled":false,"Name":"Signatures","IsHandDrawn":false,"ShowCompany":false,"Instruction":""}</Signature>
+  <fields>
+    <field name="Contact Name (First &amp; Last)">
+      <type>Text</type>
+      <InternalFormat>{"PatternEnabled":false,"Pattern":"","Instruction":""}</InternalFormat>
+      <order>1</order>
+      <LayoutFormat>{"Width":"2","Order":1}</LayoutFormat>
+      <repeating>false</repeating>
+      <ID>40639</ID>
+    </field>
+    <field name="Primary Contact Number">
+      <type>Text</type>
+      <InternalFormat>{"PatternEnabled":false,"Pattern":"","Instruction":""}</InternalFormat>
+      <order>3</order>
+      <LayoutFormat>{"Width":"1","Order":-1}</LayoutFormat>
+      <repeating>false</repeating>
+      <ID>40640</ID>
+    </field>
+    <field name="Email">
+      <type>Text</type>
+      <InternalFormat>{"PatternEnabled":false,"Pattern":"","Instruction":""}</InternalFormat>
+      <order>4</order>
+      <LayoutFormat>{"Width":"1","Order":-1}</LayoutFormat>
+      <repeating>false</repeating>
+      <ID>40641</ID>
+    </field>
+    <field name="Company">
+      <type>Text</type>
+      <InternalFormat>{"PatternEnabled":false,"Pattern":"","Instruction":""}</InternalFormat>
+      <order>5</order>
+      <LayoutFormat>{"Width":"1","Order":-1}</LayoutFormat>
+      <repeating>false</repeating>
+      <ID>40642</ID>
+    </field>
+    <field name="Website">
+      <type>Text</type>
+      <InternalFormat>{"PatternEnabled":false,"Pattern":"","Instruction":""}</InternalFormat>
+      <order>6</order>
+      <LayoutFormat>{"Width":"1","Order":-1}</LayoutFormat>
+      <repeating>false</repeating>
+      <ID>40643</ID>
+    </field>
+    <field name="Web Lead Comment">
+      <type>Text</type>
+      <InternalFormat>{"PatternEnabled":false,"Pattern":"","Instruction":""}</InternalFormat>
+      <order>7</order>
+      <LayoutFormat>{"Width":"2","Order":-1}</LayoutFormat>
+      <repeating>false</repeating>
+      <ID>40644</ID>
+    </field>
+  </fields>
+  <statusLevels>
+    <statusLevel>
+      <name>New</name>
+      <autoarchive>false</autoarchive>
+      <userselectable>true</userselectable>
+      <includeInSum>true</includeInSum>
+      <allowAttachmentAddEdit>true</allowAttachmentAddEdit>
+      <allowEditForm>true</allowEditForm>
+      <signature>{"ShowLink":false}</signature>
+    </statusLevel>
+  </statusLevels>
+  <statusTriggers />
+  <defaultColumns>
+    <staff>
+      <column>Number</column>
+      <column>Owner</column>
+      <column>Action due for me</column>
+      <column>Started</column>
+      <column>Started by</column>
+      <column>Modified</column>
+      <column>Modified by</column>
+      <column>Files</column>
+    </staff>
+    <agent>
+      <column>Number</column>
+      <column>Owner</column>
+      <column>Action due for me</column>
+      <column>Started</column>
+      <column>Started by</column>
+      <column>Modified</column>
+      <column>Modified by</column>
+    </agent>
+    <customer>
+      <column>Number</column>
+      <column>Owner</column>
+      <column>Action due for me</column>
+      <column>Started</column>
+      <column>Started by</column>
+      <column>Modified</column>
+      <column>Modified by</column>
+    </customer>
+    <action>
+      <column>Form title</column>
+      <column>Done</column>
+      <column>Due</column>
+      <column>Assignee</column>
+      <column>Description</column>
+      <column>Result</column>
+    </action>
+  </defaultColumns>
+  <customWebBoxes />
+  <holders />
+  <nofitificationSettings>
+    <setting isOn="true" userType="AgentRep" watching="all" suppressOnCopy="false" suppressOnFlow="false" />
+    <setting isOn="true" userType="Staff" watching="all" suppressOnCopy="false" suppressOnFlow="false" />
+    <setting isOn="true" userType="CustomerContact" watching="all" suppressOnCopy="false" suppressOnFlow="false" />
+  </nofitificationSettings>
+</rpm:Process>
